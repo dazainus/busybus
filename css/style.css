@@ -1,0 +1,42 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'heebo', helvatica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  background-color: #dadada;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+header h1{
+  font-size: 1.4em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin:
+}
+
+.container {
+  width: 100%;
+  margin: 10px auto;
+  background-color: red;
+}
+
+.item {
+  display: block;
+}
+
+.item-row {
+  display: inline-block;
+  margin: 10px;
+}
+
+.list-title {
+  font-weight: 600;
+}
