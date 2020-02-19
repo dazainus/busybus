@@ -29,5 +29,4 @@ Two sections are submitted for a review:
 
 ____________________________
 
-Created by Diane D. Han
-Feb 2020
+Created by Diane D. Han | Feb 2020
