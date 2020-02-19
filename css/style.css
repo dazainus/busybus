@@ -39,7 +39,7 @@ h3 {
 
 
 /** Z_INDEX **/
-.ref-image { z-index: 1000;}
+.ref-image { z-index: -1;}
 
 .top-ui { z-index: 200;}
 
@@ -81,7 +81,7 @@ h3 {
 .map {
   position: absolute;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .map-img {
@@ -89,6 +89,34 @@ h3 {
   height: 100%;
   object-fit: none;
 }
+
+/** NAVI PINS **/
+.navi-pins {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.navi-pin {
+  height: 20pt;
+}
+
+  /** INDIVIDUAL NAVI PIN LOCATION **/
+  #washington { transform: translate(175px, 133px); }
+  #washington-wab { transform: translate(300px,155px);}
+  #monroe-l {
+    transform: translate(125px,288px);
+    z-index: 2000;
+  }
+  #monroe-r { transform: translate(176px,287px); }
+  #adams-wab { transform: translate(226px,357px); }
+  #jackson-l {transform: translate(50px,447px);}
+  #jackson-r {transform: translate(100px,444px);}
+  #laselle-vanburen {transform: translate(-116px, 530px);}
+  #harold-vanburen {transform: translate(2px, 528px);}
+  #laselle {transform: translate(-161px, 606px);}
+  #harrison {transform: translate(2px, 676px);}
+
 
 .gps {
   position: fixed;
@@ -137,15 +165,15 @@ h3 {
   border-radius: 10px 10px 0 0;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
   padding-top: 10px;
-  transform: translateY(30px);
+  transform: translateY(180px);
 }
 
     /** TOP CLOSE HANDLE **/
     .handle {
-      height: 7px;
-      width: 35px;
+      height: 4px;
+      width: 36px;
       border-radius: 4px;
-      background-color: #ADADAD;
+      background-color: rgba(203, 205, 204, 0.7);
       margin: auto;
     }
 
@@ -158,21 +186,21 @@ h3 {
     .dest-wrapper {
       display: flex;
       justify-content: space-between;
-      margin: 5px 15px 5px 15px;
+      margin: 10px 15px 5px 15px;
       /* background-color: red; */
     }
 
-    /** DESTINATION - CLOSE BUTTON **/
+    /** DELETE CLOSE BUTTON
     .dest-close {
       width: 24px;
       height: 24px;
       text-align: right;
-    }
+    **/
 
     /** EACH BUS OPTIONS - SHARED **/
     .item {
-      height: 75px;
-      padding-top: 8px;
+      height: 80px;
+      padding-top: 10px;
       border-bottom: 1px solid #BCBBC1;
     }
 
@@ -308,12 +336,8 @@ h3 {
           vertical-align: text-bottom;
         }
 
-    /** CUSTOM **/
-
+    /** CUSTOM: BUS LINES **/
     /** BUS 60 **/
-        #bus-60 .item {
-          background-color: #F2E8F7;
-        }
 
         #bus-60 .bus-number-bg {
           background-color: #BF5AF2;
@@ -331,6 +355,12 @@ h3 {
         #bus-60 .bus-icon {
           transform: translate(306px, 0px);
         }
+
+        /** DISABLING BACKGROUND COLOR
+        #bus-60 .item {
+          background-color: #F2E8F7;
+        }
+        **/
 
     /** BUS 124 E **/
         #bus-124-e .bus-number-bg {
@@ -437,8 +467,6 @@ h3 {
         #bus-157 .bus-number-bg-disabled {
           background-color: #B25000;
         }
-
-
 
 
 
