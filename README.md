@@ -17,7 +17,7 @@ Overall
 
 'bus-route-window.html'
 * On 'Bottom feature navi' the titles under icons are changed from image to now in text.
-* {Position} in '.sticky' is changed from {fixed} to {relative} so you can scroll the window and view the other buses arriving.
+* `{Position}` in `.sticky` is changed from `{fixed}` to `{relative}` so you can scroll the window and view the other buses arriving.
 
 ____________________________
 DIRECTION
