@@ -32,6 +32,12 @@ h2 {
 
 h3 {
   font-family: inherit;
+  font-size: 11pt;
+  font-weight: 200;
+}
+
+h4 {
+  font-family: inherit;
   font-size: 9pt;
   font-weight: 200;
 }
@@ -149,7 +155,7 @@ h3 {
 }
 
 .sticky {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   display: block;
@@ -160,12 +166,12 @@ h3 {
   display: block;
   position: relative;
   bottom: 0;
-  height: 800px;
+  height: 880px;
   background-color: #EBEBEB;
   border-radius: 10px 10px 0 0;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
   padding-top: 10px;
-  transform: translateY(180px);
+  transform: translateY(200px);
 }
 
     /** TOP CLOSE HANDLE **/
@@ -179,23 +185,39 @@ h3 {
 
     /** DESTINATION **/
     .destination {
-      height: 65px;
+      height: 100px;
       border-bottom: 1px solid #BCBBC1;
     }
 
     .dest-wrapper {
       display: flex;
       justify-content: space-between;
-      margin: 10px 15px 5px 15px;
+      margin: 10px 15px 8px 15px;
       /* background-color: red; */
     }
 
-    /** DELETE CLOSE BUTTON
-    .dest-close {
-      width: 24px;
-      height: 24px;
-      text-align: right;
-    **/
+    /** TIME FROM MY LOCATION TO DESTINATION **/
+    .timer-wrapper {
+      display: flex;
+      margin: 5px 10px 10px 10px;
+      padding: 10px 10px 10px 10px;
+      border-top: 1px solid #BCBBC1;
+    }
+
+    .timer-wrapper img {
+      height: 16px;
+      margin-right: 8px;
+    }
+
+    .timer-wrapper #bold {
+      font-weight: 700;
+    }
+
+    .timer-wrapper #my-location {
+      color: #007AFF;
+      font-weight: 400;
+      text-decoration: underline;
+    }
 
     /** EACH BUS OPTIONS - SHARED **/
     .item {
@@ -254,7 +276,7 @@ h3 {
           text-align: right;
         }
 
-        .item-time-container img, h3{
+        .item-time-container img, h4{
           display: inline;
           vertical-align: text-bottom;
         }
@@ -331,7 +353,7 @@ h3 {
           text-align: right;
         }
 
-        .item-time-container img, h3{
+        .item-time-container img, h4{
           display: inline;
           vertical-align: text-bottom;
         }
@@ -471,6 +493,7 @@ h3 {
 
 
 /** BOTTOM NAVI **/
+/** BOTTOM NAVI BOTTOM **/
 .bot-navi {
   height: 70px;
   width: 100%;
@@ -480,12 +503,25 @@ h3 {
   bottom: 0;
 }
 
-.bot-navi-icons {
-  text-align: center;
-  margin-top: 1px;
-
+.bot-navi-container {
+  display: flex;
+  padding-top: 4pt;
 }
 
-.bot-navi-icons img {
-  width: 70px;
+.bot-navi-item {
+  width: 50pt;
+  text-align: center;
+  margin: auto;
+}
+
+.bot-navi-item img {
+  width: 24pt;
+}
+
+.bot-navi-item p {
+  color: #8A8A8F;
+}
+
+.selected p {
+  color: #007AFF;
 }

@@ -1,20 +1,23 @@
 
 VERSIONS
 
-Version 0.3
+Version 0.4
 
+Feb 20, 2020
 ____________________________
 
 UPDATE LOG
 
+Overall
+* <div> submitted with semantic code such as <section>, <nav>, and <ul> tags.
+
 'index.html'
-* Visual revision: 'Popover' on map is removed.
-* Visual revision: 'Navigation pin' added on map over bus stops.
+* On 'Bottom feature navi' the titles under icons are changed from image to now in text.
+* 'Navi pin' icons on the map is updated with new color.
 
 'bus-route-window.html'
-* Purple background tint removed on 'Randolph / Harbor Dr' bus line.
-* Close 'X' button removed from the bus routes popup window, reflecting the most recent update in iOS.
-* More space added on the top and bottom of each bus line items.
+* On 'Bottom feature navi' the titles under icons are changed from image to now in text.
+* {Position} in '.sticky' is changed from {fixed} to {relative} so you can scroll the window and view the other buses arriving.
 
 ____________________________
 DIRECTION
@@ -29,4 +32,6 @@ Two sections are submitted for a review:
 
 ____________________________
 
-Created by Diane D. Han | Feb 2020
+Created by Diane D. Han
+
+https://github.com/dazainus/busybus.git
