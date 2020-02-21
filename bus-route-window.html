@@ -11,324 +11,365 @@
     </head>
     <body>
 
-      <!-- REFERENCE IMAGE -->
-      <!--
+      <!-- REFERENCE IMAGE
       <div>
         <img class="ref-image" src="images/ref-bus-route-closed.png">
       </div>
       -->
 
-
-      <!-- MAP BACKGROUND -->
-      <div class="map">
-        <img class="map-img" src="images/map-expanded.png">
-      </div>
-
-      <!-- REFERENCE MAP
-      <div class="map-expanded">
-        <img src="images/map-expanded.png">
-      </div>
-      -->
-
-      <!-- GPS -->
-      <div class="gps">
-        <img src="images/icon-gps.png">
-      </div>
-
-      <!-- PIN -->
-      <div class="pin-area">
-        <img src="images/pin.png">
-      </div>
-
-      <!-- POPOVER -->
-      <div class="popover">
-          <a href="../bus-route-window.html"><img src="images/popover.png"></a>
-      </div>
-
       <!-- TOP UI BAR -->
-      <div class="top-ui">
+      <section class="top-ui">
         <img class="top-ui-image" src="images/ui-bar/top-ui-bar-iphoneX.png">
-      </div>
+      </section>
+
+      <!-- MAP CONTAINER -->
+      <main>
+
+        <!-- MAP BACKGROUND -->
+        <div class="map">
+          <img class="map-img" src="images/map-expanded.png">
+        </div>
+
+        <!-- REFERENCE MAP
+        <div class="map-expanded">
+          <img src="images/map-expanded.png">
+        </div>
+        -->
+
+        <!-- GPS -->
+        <div class="gps">
+          <img src="images/icon-gps.png">
+        </div>
+
+        <!-- PIN -->
+        <div class="pin-area">
+          <img src="images/pin.png">
+        </div>
+
+        <!-- POPOVER -->
+        <div class="popover">
+            <a href="../bus-route-window.html"><img src="images/popover.png"></a>
+        </div>
+
+      </main>
 
       <!-- BUS ROUTE WINDOW + BOTTOM NAVI -->
       <section class="sticky">
 
         <!-- ENTIRE BUS ROUTE WINDOW -->
-        <div class="bus-route-window">
-
-          <div class="bg">
+        <section class="bus-route-window">
 
             <!-- TOP CLOSE HANDLE OF BUS ROUTE WINDOW -->
-            <div class="handle"></div>
+            <div class="handle" onclick="location.href='index.html';"></div>
 
             <!-- DESTINATION ON THE TOP OF WINDOW -->
-            <div class="destination">
-              <div class="dest-wrapper">
+            <ul class="destination">
+
+              <li class="dest-wrapper">
+
                 <div class="dest-text-area">
                   <h1> Washington / State Station </h1>
                   <h2> Bus Station &#183; 0.2 mi</h2>
                 </div>
+
                 <!-- DELETE CLOSE BUTTON
                 <div class="dest-close">
                   <img src="images/icon-close.png">
                 </div>
                 -->
-              </div>
-            </div>
+              </li>
+
+
+              <li class="timer-wrapper">
+                  <img src="images/icon-person.png">
+                  <h3><span id="bold">10 min</span> from <span id="my-location">My Location</span></h3>
+              </li>
+
+            </ul>
 
             <!-- EACH BUS OPTIONS -->
-            <div id="bus-60">
-            <div class="item">
-              <div class="item-text-area">
+            <ul>
+              <li class="item" id="bus-60">
+                <div class="item-text-area">
 
-                <div class="bus-number-container">
-                  <div class="bus-number-bg">
-                    <h2>60</h2>
+                  <div class="bus-number-container">
+                    <div class="bus-number-bg">
+                      <h2>60</h2>
+                    </div>
+                  </div>
+
+                  <div class="text-container">
+                    <h2>Randolph / Harbor Dr</h2>
+                    <h4>Eastbound <span class="grey-text"> &#183; Every 20 min</span></h4>
+                  </div>
+
+                  <div class="time-container">
+                      <img src="images/icon-stopwatch-purple.png">
+                      <h4>Arriving now</h4>
+                  </div>
+                </div>
+                <div class="time-tracker-area">
+
+                  <div class="time-tracker">
+                    <img class="bus-icon" src="images/icon-bus-purple.png">
+                    <div class="color-bar"></div>
+                    <div class="grey-bar"></div>
+                  </div>
+
+                </div>
+              </li>
+              <li class="item" id="bus-124-e">
+                <div class="item-text-area">
+
+                  <div class="bus-number-container">
+                    <div class="bus-number-bg">
+                      <h2>124</h2>
+                    </div>
+                  </div>
+
+                  <div class="text-container">
+                    <h2>Navy Pier</h2>
+                    <h4>Eastbound <span class="grey-text"> &#183; Every 10 min</span></h4>
+                  </div>
+
+                  <div class="time-container">
+                      <img src="images/icon-stopwatch-blue.png">
+                      <h4>5 min</h4>
+                  </div>
+
+                </div>
+
+                <div class="time-tracker-area">
+
+                  <div class="time-tracker">
+                    <img class="bus-icon" src="images/icon-bus-blue.png">
+                    <div class="color-bar"></div>
+                    <div class="grey-bar"></div>
+                  </div>
+
+                </div>
+              </li>
+              <li class="item" id="bus-124-s">
+                <div class="item-text-area">
+
+                  <div class="bus-number-container">
+                    <div class="bus-number-bg">
+                      <h2>124</h2>
+                    </div>
+                  </div>
+
+                  <div class="text-container">
+                    <h2>Navy Pier</h2>
+                    <h4>Southbound <span class="grey-text"> &#183; Every 10 min</span></h4>
+                  </div>
+
+                  <div class="time-container">
+                      <img src="images/icon-stopwatch-blue.png">
+                      <h4>10 min</h4>
+                  </div>
+                </div>
+                <div class="time-tracker-area">
+
+                  <div class="time-tracker">
+                    <img class="bus-icon" src="images/icon-bus-blue.png">
+                    <div class="color-bar"></div>
+                    <div class="grey-bar"></div>
+                  </div>
+
+                </div>
+              </div>
+              <li class="item" id="bus-j14">
+
+                <div class="item-text-area">
+
+                  <div class="bus-number-container">
+                    <div class="bus-number-bg">
+                      <h2>J14</h2>
+                    </div>
+                  </div>
+
+                  <div class="text-container">
+                    <h2>103rd / Stony Island</h2>
+                    <h4>Southbound <span class="grey-text"> &#183; Every 15 min</span></h4>
+                  </div>
+
+                  <div class="time-container">
+                      <img src="images/icon-stopwatch-blue.png">
+                      <h4>11 min</h4>
+                  </div>
+                </div>
+                <div class="time-tracker-area">
+
+                  <div class="time-tracker">
+                    <img class="bus-icon" src="images/icon-bus-blue.png">
+                    <div class="color-bar"></div>
+                    <div class="grey-bar"></div>
+                  </div>
+
+                </div>
+
+              </li>
+              <li class="item" id="bus-151">
+                <div class="item-text-area">
+
+                  <div class="bus-number-container">
+                    <div class="bus-number-bg">
+                      <h2>151</h2>
+                    </div>
+                  </div>
+
+                  <div class="text-container">
+                    <h2>Devon / Clark</h2>
+                    <h4>Northbound <span class="grey-text"> &#183; Every 16 min</span></h4>
+                  </div>
+
+                  <div class="time-container">
+                      <img src="images/icon-stopwatch-blue.png">
+                      <h4>12 min</h4>
+                  </div>
+                </div>
+                <div class="time-tracker-area">
+
+                  <div class="time-tracker">
+                    <img class="bus-icon" src="images/icon-bus-blue.png">
+                    <div class="color-bar"></div>
+                    <div class="grey-bar"></div>
+                  </div>
+
+                </div>
+
+              </li>
+              <li class="item" id="bus-6x">
+                <div class="item-text-area">
+
+                  <div class="bus-number-container">
+                    <div class="bus-number-bg">
+                      <h2>6X</h2>
+                    </div>
+                  </div>
+
+                  <div class="text-container">
+                    <h2>Jackson Park Express</h2>
+                    <h4>Reroute </h4>
+                  </div>
+
+                  <div class="time-container">
+                      <img src="images/icon-stopwatch-blue.png">
+                      <h4>20 min</h4>
+                  </div>
+
+                </div>
+
+                <div class="time-tracker-area">
+
+                  <div class="time-tracker">
+                    <img class="bus-icon" src="images/icon-bus-blue.png">
+                    <div class="color-bar"></div>
+                    <div class="grey-bar"></div>
+                  </div>
+
+                </div>
+
+              </li>
+              <li class="item-disabled" id="bus-4">
+                <div class="item-text-area">
+
+                  <div class="bus-number-container">
+                    <div class="bus-number-bg-disabled">
+                      <h2>4</h2>
+                    </div>
+                  </div>
+
+                  <div class="text-container-disabled">
+                    <h2>Cottage Grove</h2>
+                    <h4>Out of service </h4>
+                  </div>
+
+                  <div class="time-container-disabled">
+                      <img src="images/icon-warning.png" width="15px" height="13px">
+                      <h4>Resumes 12:10 am</h4>
                   </div>
                 </div>
 
-                <div class="text-container">
-                  <h2>Randolph / Harbor Dr</h2>
-                  <h3>Eastbound <span class="grey-text"> &#183; Every 20 min</span></h3>
-                </div>
+              </li>
+              <li class="item-disabled" id="bus-20">
+                <div class="item-text-area">
 
-                <div class="time-container">
-                    <img src="images/icon-stopwatch-purple.png">
-                    <h3>Arriving now</h3>
-                </div>
-              </div>
-              <div class="time-tracker-area">
-
-                <div class="time-tracker">
-                  <img class="bus-icon" src="images/icon-bus-purple.png">
-                  <div class="color-bar"></div>
-                  <div class="grey-bar"></div>
-                </div>
-
-              </div>
-            </div>
-            </div>
-
-            <div class="item" id="bus-124-e">
-              <div class="item-text-area">
-
-                <div class="bus-number-container">
-                  <div class="bus-number-bg">
-                    <h2>124</h2>
+                  <div class="bus-number-container">
+                    <div class="bus-number-bg-disabled">
+                      <h2>20</h2>
+                    </div>
                   </div>
-                </div>
 
-                <div class="text-container">
-                  <h2>Navy Pier</h2>
-                  <h3>Eastbound <span class="grey-text"> &#183; Every 10 min</span></h3>
-                </div>
-
-                <div class="time-container">
-                    <img src="images/icon-stopwatch-blue.png">
-                    <h3>5 min</h3>
-                </div>
-              </div>
-              <div class="time-tracker-area">
-
-                <div class="time-tracker">
-                  <img class="bus-icon" src="images/icon-bus-blue.png">
-                  <div class="color-bar"></div>
-                  <div class="grey-bar"></div>
-                </div>
-
-              </div>
-            </div>
-            <div class="item" id="bus-124-s">
-              <div class="item-text-area">
-
-                <div class="bus-number-container">
-                  <div class="bus-number-bg">
-                    <h2>124</h2>
+                  <div class="text-container-disabled">
+                    <h2>Madison</h2>
+                    <h4>Out of service </h4>
                   </div>
-                </div>
 
-                <div class="text-container">
-                  <h2>Navy Pier</h2>
-                  <h3>Southbound <span class="grey-text"> &#183; Every 10 min</span></h3>
-                </div>
-
-                <div class="time-container">
-                    <img src="images/icon-stopwatch-blue.png">
-                    <h3>10 min</h3>
-                </div>
-              </div>
-              <div class="time-tracker-area">
-
-                <div class="time-tracker">
-                  <img class="bus-icon" src="images/icon-bus-blue.png">
-                  <div class="color-bar"></div>
-                  <div class="grey-bar"></div>
-                </div>
-
-              </div>
-            </div>
-            <div class="item" id="bus-j14">
-              <div class="item-text-area">
-
-                <div class="bus-number-container">
-                  <div class="bus-number-bg">
-                    <h2>J14</h2>
+                  <div class="time-container-disabled">
+                      <img src="images/icon-warning.png" width="15px" height="13px">
+                      <h4>Resumes 12:10 am</h4>
                   </div>
+
                 </div>
 
-                <div class="text-container">
-                  <h2>103rd / Stony Island</h2>
-                  <h3>Southbound <span class="grey-text"> &#183; Every 15 min</span></h3>
-                </div>
+              </li>
+              <li class="item-disabled" id="bus-157">
+                <div class="item-text-area">
 
-                <div class="time-container">
-                    <img src="images/icon-stopwatch-blue.png">
-                    <h3>11 min</h3>
-                </div>
-              </div>
-              <div class="time-tracker-area">
-
-                <div class="time-tracker">
-                  <img class="bus-icon" src="images/icon-bus-blue.png">
-                  <div class="color-bar"></div>
-                  <div class="grey-bar"></div>
-                </div>
-
-              </div>
-            </div>
-            <div class="item" id="bus-151">
-              <div class="item-text-area">
-
-                <div class="bus-number-container">
-                  <div class="bus-number-bg">
-                    <h2>151</h2>
+                  <div class="bus-number-container">
+                    <div class="bus-number-bg-disabled">
+                      <h2>157</h2>
+                    </div>
                   </div>
-                </div>
 
-                <div class="text-container">
-                  <h2>Devon / Clark</h2>
-                  <h3>Northbound <span class="grey-text"> &#183; Every 16 min</span></h3>
-                </div>
-
-                <div class="time-container">
-                    <img src="images/icon-stopwatch-blue.png">
-                    <h3>12 min</h3>
-                </div>
-              </div>
-              <div class="time-tracker-area">
-
-                <div class="time-tracker">
-                  <img class="bus-icon" src="images/icon-bus-blue.png">
-                  <div class="color-bar"></div>
-                  <div class="grey-bar"></div>
-                </div>
-
-              </div>
-            </div>
-            <div class="item" id="bus-6x">
-              <div class="item-text-area">
-
-                <div class="bus-number-container">
-                  <div class="bus-number-bg">
-                    <h2>6X</h2>
+                  <div class="text-container-disabled">
+                    <h2>Streeterville / Taylor </h2>
+                    <h4>Out of service </h4>
                   </div>
-                </div>
 
-                <div class="text-container">
-                  <h2>Jackson Park Express</h2>
-                  <h3>Reroute </h3>
-                </div>
-
-                <div class="time-container">
-                    <img src="images/icon-stopwatch-blue.png">
-                    <h3>20 min</h3>
-                </div>
-              </div>
-              <div class="time-tracker-area">
-
-                <div class="time-tracker">
-                  <img class="bus-icon" src="images/icon-bus-blue.png">
-                  <div class="color-bar"></div>
-                  <div class="grey-bar"></div>
-                </div>
-
-              </div>
-            </div>
-            <div class="item-disabled" id="bus-4">
-              <div class="item-text-area">
-
-                <div class="bus-number-container">
-                  <div class="bus-number-bg-disabled">
-                    <h2>4</h2>
+                  <div class="time-container-disabled">
+                      <img src="images/icon-warning.png" width="15px" height="13px">
+                      <h4>Resumes 6:00 am</h4>
                   </div>
+
                 </div>
 
-                <div class="text-container-disabled">
-                  <h2>Cottage Grove</h2>
-                  <h3>Out of service </h3>
-                </div>
-
-                <div class="time-container-disabled">
-                    <img src="images/icon-warning.png" width="15px" height="13px">
-                    <h3>Resumes 12:10 am</h3>
-                </div>
-              </div>
-            </div>
-            <div class="item-disabled" id="bus-20">
-              <div class="item-text-area">
-
-                <div class="bus-number-container">
-                  <div class="bus-number-bg-disabled">
-                    <h2>20</h2>
-                  </div>
-                </div>
-
-                <div class="text-container-disabled">
-                  <h2>Madison</h2>
-                  <h3>Out of service </h3>
-                </div>
-
-                <div class="time-container-disabled">
-                    <img src="images/icon-warning.png" width="15px" height="13px">
-                    <h3>Resumes 12:10 am</h3>
-                </div>
-              </div>
-            </div>
-            <div class="item-disabled" id="bus-157">
-              <div class="item-text-area">
-
-                <div class="bus-number-container">
-                  <div class="bus-number-bg-disabled">
-                    <h2>157</h2>
-                  </div>
-                </div>
-
-                <div class="text-container-disabled">
-                  <h2>Streeterville / Taylor </h2>
-                  <h3>Out of service </h3>
-                </div>
-
-                <div class="time-container-disabled">
-                    <img src="images/icon-warning.png" width="15px" height="13px">
-                    <h3>Resumes 6:00 am</h3>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
+              </li>
+            </ul>
+        </section>
 
         <!-- BOTTOM NAVI -->
-        <div class="bot-navi">
-          <div class="bot-navi-icons">
-            <img class="bot-navi-options" src="images/bottom-navi/options-3x.png">
-            <img class="bot-navi-options" src="images/bottom-navi/saved-3x.png">
-            <img class="bot-navi-options" src="images/bottom-navi/bus-stops-3x.png">
-            <img class="bot-navi-options" src="images/bottom-navi/bus-routes-3x.png">
-            <img class="bot-navi-options" src="images/bottom-navi/issues-3x.png">
-          </div>
-        </div>
+        <nav class="bot-navi">
+          <ul class="bot-navi-container">
+
+            <li class="bot-navi-item">
+              <img src="images/bottom-navi/options-3x.png">
+              <p>Options</p>
+            </il>
+
+            <li class="bot-navi-item">
+              <img  src="images/bottom-navi/saved-3x.png">
+              <p>Saved</p>
+            </il>
+
+            <li class="bot-navi-item selected">
+              <img src="images/bottom-navi/bus-3x.png">
+              <p>Bus Stops</p>
+            </il>
+
+            <li class="bot-navi-item">
+              <img src="images/bottom-navi/bus-routes-3x.png">
+              <p>Bus Routes</p>
+            </il>
+
+            <li class="bot-navi-item">
+              <img src="images/bottom-navi/issues-3x.png">
+              <p>Issues</p>
+            </il>
+
+          </ul>
+        </nav>
 
       </section>
 

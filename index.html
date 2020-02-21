@@ -17,62 +17,78 @@
       </div>
       -->
 
-
-      <!-- MAP BACKGROUND -->
-      <div class="map">
-        <img class="map-img" src="images/map-expanded.png">
-      </div>
-
-      <div class="navi-pins">
-        <img class="navi-pin" id="washington" src="images/icon-navi-pin.png">
-        <img class="navi-pin" id="washington-wab" src="images/icon-navi-pin.png">
-        <a href="bus-route-window.html"><img class="navi-pin" id="monroe-l" src="images/icon-navi-pin.png"></a>
-        <img class="navi-pin" id="monroe-r" src="images/icon-navi-pin.png">
-        <img class="navi-pin" id="adams-wab" src="images/icon-navi-pin.png">
-        <img class="navi-pin" id="jackson-l" src="images/icon-navi-pin.png">
-        <img class="navi-pin" id="jackson-r" src="images/icon-navi-pin.png">
-        <img class="navi-pin" id="laselle-vanburen" src="images/icon-navi-pin.png">
-        <img class="navi-pin" id="harold-vanburen" src="images/icon-navi-pin.png">
-        <img class="navi-pin" id="laselle" src="images/icon-navi-pin.png">
-        <img class="navi-pin" id="harrison" src="images/icon-navi-pin.png">
-      </div>
-
-      <!-- GPS -->
-      <div class="gps">
-        <img src="images/icon-gps.png">
-      </div>
-
-      <!-- PIN -->
-      <div class="pin-area">
-        <img src="images/pin.png">
-      </div>
-
-      <!-- POPOVER -->
-      <!--
-      <div class="popover">
-          <img src="images/popover.png">
-      </div>
-    -->
-
       <!-- TOP UI BAR -->
-      <div class="top-ui">
+      <section class="top-ui">
         <img class="top-ui-image" src="images/ui-bar/top-ui-bar-iphoneX.png">
-      </div>
+      </section>
 
+      <!-- MAP CONTAINER -->
+      <main>
+
+        <!-- MAP BACKGROUND -->
+        <div class="map">
+          <img class="map-img" src="images/map-expanded.png">
+        </div>
+
+        <div class="navi-pins">
+          <a href="bus-route-window.html"><img class="navi-pin" id="washington" src="images/icon-navi-pin.png"></a>
+          <img class="navi-pin" id="washington-wab" src="images/icon-navi-pin.png">
+          <img class="navi-pin" id="monroe-l" src="images/icon-navi-pin.png">
+          <img class="navi-pin" id="monroe-r" src="images/icon-navi-pin.png">
+          <img class="navi-pin" id="adams-wab" src="images/icon-navi-pin.png">
+          <img class="navi-pin" id="jackson-l" src="images/icon-navi-pin.png">
+          <img class="navi-pin" id="jackson-r" src="images/icon-navi-pin.png">
+          <img class="navi-pin" id="laselle-vanburen" src="images/icon-navi-pin.png">
+          <img class="navi-pin" id="harold-vanburen" src="images/icon-navi-pin.png">
+          <img class="navi-pin" id="laselle" src="images/icon-navi-pin.png">
+          <img class="navi-pin" id="harrison" src="images/icon-navi-pin.png">
+        </div>
+
+        <!-- GPS -->
+        <div class="gps">
+          <img src="images/icon-gps.png">
+        </div>
+
+        <!-- PIN -->
+        <div class="pin-area">
+          <img src="images/pin.png">
+        </div>
+
+      </main>
 
       <section class="sticky">
 
-
         <!-- BOTTOM NAVI -->
-        <div class="bot-navi">
-          <div class="bot-navi-icons">
-            <img class="bot-navi-options" src="images/bottom-navi/options-3x.png">
-            <img class="bot-navi-options" src="images/bottom-navi/saved-3x.png">
-            <img class="bot-navi-options" src="images/bottom-navi/bus-stops-3x.png">
-            <img class="bot-navi-options" src="images/bottom-navi/bus-routes-3x.png">
-            <img class="bot-navi-options" src="images/bottom-navi/issues-3x.png">
-          </div>
-        </div>
+        <nav class="bot-navi">
+          <ul class="bot-navi-container">
+
+            <li class="bot-navi-item">
+              <img src="images/bottom-navi/options-3x.png">
+              <p>Options</p>
+            </il>
+
+            <li class="bot-navi-item">
+              <img  src="images/bottom-navi/saved-3x.png">
+              <p>Saved</p>
+            </il>
+
+            <li class="bot-navi-item selected">
+              <img src="images/bottom-navi/bus-3x.png">
+              <p>Bus Stops</p>
+            </il>
+
+            <li class="bot-navi-item">
+              <img src="images/bottom-navi/bus-routes-3x.png">
+              <p>Bus Routes</p>
+            </il>
+
+            <li class="bot-navi-item">
+              <img src="images/bottom-navi/issues-3x.png">
+              <p>Issues</p>
+            </il>
+
+          </ul>
+        </nav>
 
       </section>
 
