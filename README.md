@@ -9,7 +9,7 @@ ____________________________
 UPDATE LOG
 
 Overall
-* <div> submitted with semantic code such as <section>, <nav>, and <ul> tags.
+* <div> substituted with semantic code such as <section>, <nav>, and <ul> tags.
 
 'index.html'
 * On 'Bottom feature navi' the titles under icons are changed from image to now in text.
