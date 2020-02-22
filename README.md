@@ -9,15 +9,16 @@ ____________________________
 UPDATE LOG
 
 Overall
-* `<div>` substituted with semantic code such as `<section>`, `<nav>`, and `<ul>` tags.
+
+  * `<div>` substituted with semantic code such as `<section>`, `<nav>`, and `<ul>` tags.
 
 'index.html'
-* On 'Bottom feature navi' the titles under icons are changed from image to now in text.
-* 'Navi pin' icons on the map is updated with new color.
+  * On 'Bottom feature navi' the titles under icons are changed from image to now in text.
+  * 'Navi pin' icons on the map is updated with new color.
 
 'bus-route-window.html'
-* On 'Bottom feature navi' the titles under icons are changed from image to now in text.
-* `{Position}` in `.sticky` is changed from `{fixed}` to `{relative}` so you can scroll the window and view the other buses arriving.
+  * On 'Bottom feature navi' the titles under icons are changed from image to now in text.
+  * `{Position}` in `.sticky` is changed from `{fixed}` to `{relative}` so you can scroll the window and view the other buses arriving.
 
 ____________________________
 DIRECTION
